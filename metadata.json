@@ -1,0 +1,7 @@
+{
+  "name": "Bulk Nation Supplements",
+  "description": "A high-energy, modern eCommerce landing page for Bulk Nation supplements store featuring neon aesthetics, product showcases, and WhatsApp integration.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
