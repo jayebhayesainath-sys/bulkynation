@@ -12,6 +12,7 @@ import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import DiscountPopup from './components/DiscountPopup';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
+import AIChatAssistant from './components/AIChatAssistant';
 
 const App: React.FC = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -19,7 +20,7 @@ const App: React.FC = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsPopupOpen(true);
-    }, 3000);
+    }, 5000); // Popup after 5 seconds
     return () => clearTimeout(timer);
   }, []);
 
@@ -63,6 +64,7 @@ const App: React.FC = () => {
 
       <Footer />
       <FloatingWhatsApp />
+      <AIChatAssistant />
       <DiscountPopup isOpen={isPopupOpen} onClose={() => setIsPopupOpen(false)} />
     </div>
   );
